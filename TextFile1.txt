@@ -1,0 +1,133 @@
+﻿// Grabs motion and attempt to highlight blobs in it.  Not a useful ability
+		   
+		   Bitmap motionImage = (Bitmap)image.Clone();
+            float motion = detector.ProcessFrame(motionImage);
+
+            Bitmap tmpImg = detector.MotionDetectionAlgorithm.MotionFrame.ToManagedImage();
+            Bitmap motionImg = tmpImg.Clone(new Rectangle(0, 0, tmpImg.Width, tmpImg.Height), image.PixelFormat);
+
+            // lock image
+            BitmapData bitmapData = motionImg.LockBits(
+                new Rectangle(0, 0, motionImg.Width, motionImg.Height),
+                ImageLockMode.ReadWrite, motionImg.PixelFormat);
+
+            try
+            {
+                BlobCounter blobCounter = new BlobCounter();
+                blobCounter.ProcessImage(bitmapData);
+                Blob[] blobs = blobCounter.GetObjectsInformation();
+                motionImg.UnlockBits(bitmapData);
+
+                Graphics g = Graphics.FromImage(motionImg);
+                Pen bluePen = new Pen(Color.Blue, 2);
+
+                for (int i = 0, n = blobs.Length; i < n; i++)
+                {
+                    List<IntPoint> edgePoints = blobCounter.GetBlobsEdgePoints(blobs[i]);
+                    List<IntPoint> corners = PointsCloud.FindQuadrilateralCorners(edgePoints);
+
+                    g.DrawPolygon(bluePen, ToPointsArray(corners));
+                }
+
+                bluePen.Dispose();
+                g.Dispose();
+            }
+            catch (Exception) { }
+            pictureBox1.Image = motionImg;
+
+
+
+
+
+
+
+			    private void videoSourcePlayer_NewFrame( object sender, ref Bitmap image )
+        {
+            //UnmanagedImage grayImage = null,
+            //    edgesImage = null;
+
+            //BitmapData imageData = image.LockBits(
+            //    new Rectangle(0, 0, image.Width, image.Height),
+            //    ImageLockMode.ReadWrite, image.PixelFormat);
+            Bitmap newImage;
+            try
+            {
+               // UnmanagedImage img = new UnmanagedImage( imageData );
+                int x = (int)(image.Width / 3.25);
+                int y = (int)(image.Height / 2.2);
+                int w = (int)(image.Width / 2.6);
+                int h = (int)(image.Height / 4);
+                int s = (int)(image.Width / 10.2);
+
+                // Crop the player scroll window.  Speeds up the next couple operations
+                Crop onePlayer = new Crop(new Rectangle(x, y, w, h));
+                Bitmap img = onePlayer.Apply(image);
+
+                // define quadrilateral's corners
+                List<IntPoint> corners = new List<IntPoint>();
+                corners.Add(new IntPoint(s, 0));
+                corners.Add(new IntPoint(img.Width - s, 0)); ;
+                corners.Add(new IntPoint(img.Width, img.Height));
+                corners.Add(new IntPoint(0, img.Height));
+
+                // create filter
+                QuadrilateralTransformation filter =
+                    new QuadrilateralTransformation(corners, img.Width, img.Height);
+                // apply the filter
+                newImage = filter.Apply(img);
+
+                ////Invert invertFilter = new Invert();
+                ////invertFilter.ApplyInPlace(img);
+
+                //grayImage = UnmanagedImage.Create(img.Width, img.Height,
+                //    PixelFormat.Format8bppIndexed);
+            
+                //Grayscale.CommonAlgorithms.BT709.Apply(img, grayImage);
+
+                //OtsuThreshold threshold = new OtsuThreshold();
+                //threshold.ApplyInPlace(grayImage);
+
+                //// 2 - Edge detection
+                ////DifferenceEdgeDetector edgeDetector = new DifferenceEdgeDetector();
+                //HomogenityEdgeDetector edgeDetector = new HomogenityEdgeDetector();
+                //edgesImage = edgeDetector.Apply(grayImage);
+
+                //// 3 - Threshold edges
+                //Threshold thresholdFilter = new Threshold(15);
+                //thresholdFilter.ApplyInPlace(edgesImage);
+
+                //BlobsFiltering blobFilter = new BlobsFiltering();
+                //blobFilter.CoupledSizeFiltering = false;
+                //blobFilter.MinWidth = 5;
+                //blobFilter.MinHeight = 5;
+                //blobFilter.MaxWidth = 50;
+                //blobFilter.MaxHeight = 0;
+                //blobFilter.ApplyInPlace(edgesImage);
+
+                // C
+            }
+            finally
+            {
+                //image.UnlockBits( imageData );
+            }
+
+
+            //pictureBox1.Image = edgesImage.ToManagedImage();
+            //pictureBox1.Image = grayImage.ToManagedImage();
+            pictureBox1.Image = newImage;
+
+            //System.Threading.Thread.Sleep(100);
+
+        }
+
+        private System.Drawing.Point[] ToPointsArray(List<IntPoint> points)
+        {
+            System.Drawing.Point[] array = new System.Drawing.Point[points.Count];
+
+            for (int i = 0, n = points.Count; i < n; i++)
+            {
+                array[i] = new System.Drawing.Point(points[i].X, points[i].Y);
+            }
+
+            return array;
+        }

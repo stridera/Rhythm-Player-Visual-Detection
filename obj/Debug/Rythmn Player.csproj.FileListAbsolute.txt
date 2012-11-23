@@ -1,0 +1,52 @@
+C:\Users\mjones\Dropbox\Code\Rhythm Player\obj\Debug\Player.exe
+C:\Users\mjones\Dropbox\Code\Rhythm Player\obj\Debug\Player.pdb
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\Player.exe
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\Player.pdb
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Controls.dll
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.dll
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Imaging.dll
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.dll
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.VFW.dll
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Vision.dll
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Math.dll
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.xml
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Controls.xml
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Imaging.xml
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.xml
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.VFW.xml
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Vision.xml
+C:\Users\mjones\Dropbox\Code\Rhythm Player\bin\Debug\AForge.Math.xml
+C:\Users\mjones\Dropbox\Code\Rhythm Player\obj\Debug\Rythmn Player.csprojResolveAssemblyReference.cache
+C:\Users\mjones\Dropbox\Code\Rhythm Player\obj\Debug\Player.MainForm.resources
+C:\Users\mjones\Dropbox\Code\Rhythm Player\obj\Debug\Player.Properties.Resources.resources
+C:\Users\mjones\Dropbox\Code\Rhythm Player\obj\Debug\Player.URLForm.resources
+C:\Users\mjones\Dropbox\Code\Rhythm Player\obj\Debug\Rythmn Player.csproj.GenerateResource.Cache
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\obj\Debug\Player.exe
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\obj\Debug\Player.pdb
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\obj\Debug\Rythmn Player.csprojResolveAssemblyReference.cache
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\obj\Debug\Player.MainForm.resources
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\obj\Debug\Player.Properties.Resources.resources
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\obj\Debug\Player.URLForm.resources
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\obj\Debug\Rythmn Player.csproj.GenerateResource.Cache
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\Player.exe
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\Player.pdb
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Controls.dll
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.dll
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Imaging.dll
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Math.dll
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.dll
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.VFW.dll
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Vision.dll
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.xml
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Controls.xml
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Imaging.xml
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Math.xml
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.xml
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Video.VFW.xml
+C:\Users\STRIDERA\Documents\My Dropbox\Code\Rhythm Player\bin\Debug\AForge.Vision.xml
+C:\Users\StriderA\Dropbox\Code\Shared\Rhythm Player\obj\Debug\Player.exe
+C:\Users\StriderA\Dropbox\Code\Shared\Rhythm Player\obj\Debug\Player.pdb
